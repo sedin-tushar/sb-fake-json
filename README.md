@@ -21,11 +21,12 @@ yarn add sb-fake-json
 In your JavaScript or TypeScript code, you can use this library to access mock data for various purposes. Import it as follows:
 
 ```javascript
-const myMockLibrary = require('sb-fake-json');
+import { * } from 'sb-fake-json';
 
-const locationMockData = myMockLibrary.getLocationMockData();
-const courseMockData = myMockLibrary.getCourseMockData();
-const responseMockData = myMockLibrary.getResponseMockData();
+const locationMockData = getCourseMockData()
+const courseMockData = getCourseMockData();
+const responseMockData = getResponseMockData();
+const userRolesMockData = getUserRolesMockData();
 ```
 
 ## Mock Data
@@ -33,6 +34,8 @@ const responseMockData = myMockLibrary.getResponseMockData();
 - `getLocationMockData()`: Retrieve mock data for locations.
 - `getCourseMockData()`: Retrieve mock data for courses.
 - `getResponseMockData()`: Retrieve mock response data.
+- `getUserRolesMockData()`: Retrieve mock data for User roles.
+
 ## Test Mock Data
 
 Add the mock location of data and run `node testMockData.js`
