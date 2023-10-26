@@ -7,13 +7,13 @@ A library for mocking data in Sunbird Ed-Portal as Fallback
 You can install this library using npm or yarn:
 
 ```sh
-npm install sb-fake-json@1.0.1
+npm install sb-fake-json@latest
 ```
 
 or
 
 ```sh
-yarn add sb-fake-json@1.0.1
+yarn add sb-fake-json@latest
 ```
 
 ## Usage
