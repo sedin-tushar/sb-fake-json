@@ -1,4 +1,4 @@
-const roleMock = [
+const userTypeMock = [
     {
         "code": "teacher",
         "name": "Teacher",
@@ -23,7 +23,17 @@ const roleMock = [
             "Learner"
         ]
     },
-    
+    {
+        "code": "administrator",
+        "name": "School head OR Officials",
+        "index": 3,
+        "visibility": true,
+        "label": "frmelmnts.lbl.administrator",
+        "image": "guest-img5.svg",
+        "searchFilter": [
+            "administrator"
+        ]
+    },
     {
         "code": "parent",
         "name": "Parent",
@@ -38,23 +48,27 @@ const roleMock = [
             "Learner"
         ]
     },
+
     {
-      "code": "farmer",
-      "name": "Farmer",
-      "visibility": true,
-      "label": "Farmer",
-      "image": "guest-img2.svg",
-      "index": 3,
-      "searchFilter": [
-          "Student",
-          "Learner"
-      ]
-  },
+        "code": "farmer",
+        "name": "Farmer",
+        "index": 4,
+        "visibility": true,
+        "label": "Farmer",
+        "image": "guest-img4.svg",
+        "searchFilter": [
+            "Farmer",
+            "Crops",
+            "Instructor",
+            "Learner"
+        ]
+    },
+
     {
         "code": "other",
         "name": "Other",
         "visibility": false,
-        "index": 4,
+        "index": 5,
         "label": "frmelmnts.lbl.other",
         "image": "guest-img3.svg",
         "searchFilter": [
@@ -63,6 +77,7 @@ const roleMock = [
             "Instructor",
             "Learner"
         ]
-    }
+    },
 ]
-module.exports = roleMock;
+
+module.exports = userTypeMock;
