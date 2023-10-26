@@ -1,4 +1,4 @@
-[
+const userTypeMock = [
     {
         "code": "teacher",
         "name": "Teacher",
@@ -79,3 +79,5 @@
         ]
     },
 ]
+
+module.exports = userTypeMock;
