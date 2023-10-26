@@ -23,10 +23,8 @@ In your JavaScript or TypeScript code, you can use this library to access mock d
 ```javascript
 import * as MockData from 'sb-fake-json';
 
-const locationMockData = MockData.getLocationMockData()
-const courseMockData = MockData.getCourseMockData();
-const responseMockData = MockData.getResponseMockData();
-const userRolesMockData = MockData.getUserRolesMockData();
+const response = MockData.getMockResponseData('component_name');
+
 ```
 
 ## To import single mock data
@@ -35,16 +33,13 @@ const userRolesMockData = MockData.getUserRolesMockData();
 
 import { getLocationMockData } from 'sb-fake-json';
 
-const locationMockData = getLocationMockData()
+const response = getMockResponseData('component_name')
 
 ```
 
 ## Mock Data
 
-- `getLocationMockData()`: Retrieve mock data for locations.
-- `getCourseMockData()`: Retrieve mock data for courses.
-- `getResponseMockData()`: Retrieve mock response data.
-- `getUserRolesMockData()`: Retrieve mock data for User roles.
+- `getMockResponseData('explore-page')`: Retrieve mock response mock for explore page component.
 
 ## Test Mock Data
 
