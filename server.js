@@ -4,16 +4,18 @@ const courseMockData_explorecontent = require('./Ed-portal/feature/LandingPage/A
 const responseMockData_explorepage = require('./Ed-portal/feature/LandingPage/Home/MockResponse');
 const userRolesMockData = require('./Ed-portal/feature/onboarding-flow/userType/UserRolesMock')
 
+
+function getMockResponseData(key) {
+  if (key === 'explore-page') {
+    return responseMockData_explorepage;
+  }
+  else if (key === 'explore-content') {
+    return courseMockData_explorecontent;
+  }
+}
+
 module.exports = {
-  // key refers to the component name to be called
-  getMockResponseData: (key) => {
-    if (key === 'explore-page') {
-      return responseMockData_explorepage;
-    }
-    else if(key === 'explore-content'){
-      return courseMockData_explorecontent;
-    }
-  },
+  getMockResponseData
 };
 
 

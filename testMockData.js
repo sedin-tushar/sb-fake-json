@@ -1,3 +1,4 @@
-const { getMockResponseData } = require('./server')
-console.log('Mock Data in explore-page component:', getMockResponseData('explore-page'));
-console.log('Mock Data in explore-content component', getMockResponseData('explore-content'));
+const mockLibrary = require('./server');
+
+console.log('Mock Data in explore-page component:', mockLibrary.getMockResponseData('explore-page'));
+console.log('Mock Data in explore-content component', mockLibrary.getMockResponseData('explore-content'));
